@@ -1,10 +1,8 @@
-for (let num = 1; num < 101; num++) {
-    let $3quotient = num % 3 == 0;
-    let $5quotient = num % 5 == 0
-    if ($3quotient &&$5quotient) console.log("FizzBuzz")
-    else if($3quotient) console.log("Fizz")
-    else if($5quotient) console.log("Buzz")
-    else console.log(num);
+for (let n = 1; n < 101; n++) {
+    let output = ""
+    if (n % 3 == 0) output += "Fizz";
+    if (n % 5 == 0) output += "Buzz";
+    console.log(output || n);  
 }
   
 
